@@ -1,0 +1,295 @@
+
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 5px;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+
+/*Sección Menu*/
+
+section.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu__header{
+    display: flex;
+    align-items: center;
+}
+
+.logotec{
+    width: 15%;
+    justify-content: flex-start;
+}
+
+.menu__title{
+    justify-content:center;
+    align-items: center;
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+
+
+/*Sección Title*/
+
+.title{
+    background-color: #000;
+
+}
+
+.title__div{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+.title__profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.title__bio{
+    color: #F5F5F5;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes a{
+    font-size: 40px;
+    transition: all ease 400ms;
+}
+
+.redes a:hover{
+    transform: scale(1.4);
+}
+
+.github{
+    color:black;
+}
+
+.linkedin{
+    color: #0a3871;
+}
+
+.instagram{
+    color: #e1306c;
+}
+
+.skills__title{
+    display: flex;
+    justify-content: center;
+}
+
+
+.skills__line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.skills__box{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skills__img{
+    width: auto;
+}
+
+
+.hobbies__title{
+    display: flex;
+    justify-content: center;
+}
+
+.hobbies__line{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.academic__title{
+    display: flex;
+    justify-content: center;
+}
+
+.academic__courses__box{
+    display: flex;
+    justify-content: center;
+}
+
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.academic__courses__item__img{
+    display: flex;
+    justify-content: center;
+}
+
+.academic__courses__item__title{
+    justify-content: center;
+}
+
+.academic__courses__item__subtitle{
+    justify-content: center;
+}
+
+/* experiencia*/
+
+.experience__section__title{
+    display: flex;
+    justify-content: center;
+}
+
+.experiencie__box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience__img{
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+}
+
+.experience__info-container{
+    gap: 20px;
+}
+
+/*Contacto*/
+
+section.formcontato{
+    background-color: black;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+}
+
+.formcontato--esquerda{
+    display: flex;
+    justify-content: center;
+}
+
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.formcontato__botao{
+    width: 200px;
+    margin-bottom: 20px;
+    background-color:#0a3871;
+    color: #F5F5F5;
+}
+
+/*footeer*/
+
+section.footer{
+   background-color: black;
+   color: #F5F5F5;
+   width: 100%;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+/*Menu*/
+
+.menu__list{
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
